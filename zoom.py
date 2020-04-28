@@ -99,6 +99,6 @@ photos = loadImage('./16.jpg')
 image = zoomPhotosPlus(photos, 1000)
 image.show()
 
-# plt.figure('Gray Fill')
+# plt.figure('Image Zoom')
 # plt.imshow(image)
 # plt.show()

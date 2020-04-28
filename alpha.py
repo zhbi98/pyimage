@@ -120,6 +120,6 @@ ImageMixing = ImageMixing(alpha=0.6)
 image = ImageMixing.mixingImage(photos, photos2)
 image.show()
 
-# plt.figure('Gray Fill')
+# plt.figure('Image Alpha')
 # plt.imshow(image)
 # plt.show()

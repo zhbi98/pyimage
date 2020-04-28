@@ -64,7 +64,7 @@ image = loadImage('./Sierra16.jpg')
 image = imageLight(image, 9)
 image.show()
 
-# plt.figure('Gaussian Blur')
+# plt.figure('Image Brightness')
 # plt.imshow(image)
 # plt.show()
 # image.show()
