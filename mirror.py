@@ -45,7 +45,11 @@ def matrixToImages(matrix):
     return image
 
 
-def imageMirror(image, direction=0):
+mirrorlevel    = 0
+mirrorvertical = 1
+
+
+def imageMirror(image, direction=mirrorlevel):
     imagematrix = imageToMatrix(image)
 
     height = imagematrix.shape[0]
@@ -72,7 +76,7 @@ def imageMirror(image, direction=0):
 
 photos = loadImage('./Sierra23.jpg')
 
-image = imageMirror(photos, 1)
+image = imageMirror(photos, mirrorlevel)
 image.show()
 
 # plt.figure('Image Mirror')
