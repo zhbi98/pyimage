@@ -96,6 +96,7 @@ def zoomPhotosPlus(image, ratio):
 
 
 photos = loadImage('./16.jpg')
+
 image = zoomPhotosPlus(photos, 1000)
 image.show()
 
