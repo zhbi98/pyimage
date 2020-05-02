@@ -86,6 +86,7 @@ def zoomPhotosPlus(image, ratio):
                 else:
                     inty_p = inty + 1
                 
+                # f(i+u, j+v) = (1-u) * (1-v) * f(i, j) + u * (1-v) * f(i+1, j) + (1-u) * v * f(i, j+1) + u * v * f(i+1, j+1)
                 new[i, j, k] = (1 - floatx) * (1 - floaty) * img[intx, inty, k] + (1 - floatx) * floaty * img[intx, inty_p, k] + floatx * (1 - floaty) * img[intx_p, inty, k] + floatx * floaty * img[intx_p, inty_p, k]
                 
                 if (i % 500 == 0) and (j % 100 == 0):
