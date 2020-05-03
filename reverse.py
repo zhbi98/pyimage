@@ -46,7 +46,8 @@ def imageReverse(image):
 
     for i in range(height):
         for j in range(width):
-            new[i, j] = 255 - imagematrix[i, j]
+            for k in range(channel):
+                new[i, j, k] = 255 - imagematrix[i, j, k]
 
     new = new / 255    
     return matrixToImages(new)
