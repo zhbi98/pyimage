@@ -113,6 +113,11 @@ class ImageRotate(object):
         newheight = int(width * abs(math.sin(self.angle)) + height * abs(math.cos(self.angle))) + 1
 
         new = np.zeros((newheight, newwidth, channel))
+
+        # Fill the matrix with white
+        # for i in range(newheight):
+        #     for j in range(newwidth):
+        #         new[i, j] = 255 
         
         for i in range(newheight):
             for j in range(newwidth):
