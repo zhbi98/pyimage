@@ -18,4 +18,4 @@ So what we have to do is to calculate the RGB value of image C.
 `B(C) = (1-alpha)*B(B) + alpha*B(A)`
 
 #### 2.Algorithm effect:  
-![image]()
+![image]("https://github.com/zhbi98/image/blob/master/Sierra17.jpg")
