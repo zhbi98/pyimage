@@ -1,5 +1,6 @@
 # **Image processing**  
-![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) 
+![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+[![image](https://img.shields.io/lgtm/alerts/g/harshildarji/Algorithms-HackerRank.svg?logo=lgtm&logoWidth=18)]()  
 
 **Here mainly realizes the common image processing such as fisheye correction, Gaussian blur, transparency, saturation sharpening, gray filling, arbitrary angle rotation and so on. These algorithms are implemented from the bottom through Python, and the implementation process of each algorithm is described in detail below**
 
@@ -15,8 +16,8 @@ So what we have to do is to calculate the RGB value of image C.
 
 `R(C) = (1-alpha)*R(B) + alpha*R(A)`  
 `G(C) = (1-alpha)*G(B) + alpha*G(A)`  
-`B(C) = (1-alpha)*B(B) + alpha*B(A)`
-
+`B(C) = (1-alpha)*B(B) + alpha*B(A)`  
+#### [[You can also refer to](https://blog.csdn.net/weixin_35811044/article/details/84258858)]  
 #### 2.Algorithm effect:  
 _original image1_  
 <img src="https://s1.ax1x.com/2020/05/10/Y3PShR.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
@@ -52,4 +53,4 @@ else:
 ```
 You think that's fine, I said earlier that in computer image recognition, the computer only knows 0 and 1, but now the data values in the image matrix are 0 and 255, so don't worry, we will put each data of the image The value is divided by 255, so that the value of the image matrix is processed into 0 and 1.  
 _Okay, let's see the effect now_  
-<img src="https://s1.ax1x.com/2020/05/10/Y3dWK1.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />
+<img src="https://s1.ax1x.com/2020/05/10/Y3dWK1.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
