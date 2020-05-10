@@ -44,6 +44,12 @@ _Look, this is how it looks_
 <img src="https://s1.ax1x.com/2020/05/10/Y3YKGn.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
 After the image is processed into gray, there is no color, which means R = G = B = gray, so the color dimension of the color photo is also reduced, so this is also similar to a proportional mixing, mixing RGB values of color photos in a ratio of 0.299: 0.587: 0.114    
 Ok, everything is very easy to handle. After the color is processed into gray, only the dark and light colors are left for the color of the image. At this time, we can set a threshold to assign pixels with a color depth greater than the threshold 255 makes it appear white, and assign a value of 0 where it is smaller than the threshold to make it appear black. The color value is either 0 or 255, which is very good. the original color image is only black and white in a blink of an eye.  
+```
+if imagematrix[i, j] > threshold:
+    new[i, j] = 255
+else:
+    new[i, j] = 0
+```
 You think that's fine, I said earlier that in computer image recognition, the computer only knows 0 and 1, but now the data values in the image matrix are 0 and 255, so don't worry, we will put each data of the image The value is divided by 255, so that the value of the image matrix is processed into 0 and 1.  
 _Okay, let's see the effect now_  
 <img src="https://s1.ax1x.com/2020/05/10/Y3dWK1.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />
