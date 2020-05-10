@@ -18,7 +18,14 @@ So what we have to do is to calculate the RGB value of image C.
 `B(C) = (1-alpha)*B(B) + alpha*B(A)`
 
 #### 2.Algorithm effect:  
-<img src="https://s1.ax1x.com/2020/05/10/Y3PShR.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />
+_original image1_  
+<img src="https://s1.ax1x.com/2020/05/10/Y3PShR.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
+_original image2_  
+<img src="https://s1.ax1x.com/2020/05/10/Y3mHIK.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
+_original image1 monochrome mixing_  
+<img src="https://s1.ax1x.com/2020/05/10/Y3n7Os.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
+_original image1 and image2 mixing_  
+<img src="https://s1.ax1x.com/2020/05/10/Y3ui01.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
 :+1:The effect looks good!
 
 ## _II.binarizations_
