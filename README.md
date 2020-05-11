@@ -17,7 +17,7 @@ So what we have to do is to calculate the RGB value of image C.
 `R(C) = (1-alpha)*R(B) + alpha*R(A)`  
 `G(C) = (1-alpha)*G(B) + alpha*G(A)`  
 `B(C) = (1-alpha)*B(B) + alpha*B(A)`  
-#### [[You can also refer to](https://blog.csdn.net/weixin_35811044/article/details/84258858)]  
+#### [[You can also refer to](https://www.cnblogs.com/kongqiweiliang/p/3773127.html)]  
 #### 2.Algorithm effect:  
 _original image1_  
 <img src="https://s1.ax1x.com/2020/05/10/Y3PShR.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
