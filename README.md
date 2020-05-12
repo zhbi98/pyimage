@@ -67,8 +67,9 @@ _Okay, let's see the effect now_
 ## _Ⅲ. Gauassian bar_
 Blur is widely used in UI special effects, such as iOS, Android, MIUI, Windows operating system. of course, blur also plays an important role in image filters, and Gaussian blur is the most widely used in blur algorithms. gaussian blur is mainly named after the mathematician Gaussian. Gaussian blur mainly uses Gaussian distribution [normal distribution] for image blur processing. let us carefully analyze the implementation process of Gaussian blur algorithm.  
 
-#### 1. Gaussian fuzzy principle:
-The so-called "blur" can be understood as the average value of surrounding pixels for each pixel.
+#### 1. Gaussian fuzzy principle:  
+
+The so-called "blur" can be understood as the average value of surrounding pixels for each pixel.  
 <img src="https://s1.ax1x.com/2020/05/12/YUuH0S.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  <img src="https://s1.ax1x.com/2020/05/12/YUKG9A.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
 
 **This is the effect,  the average value of the surrounding points will be 1**
