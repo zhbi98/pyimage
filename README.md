@@ -33,7 +33,7 @@ _original image1 and image2 mixing_
 
 :+1:The effect looks good!
 
-## _Ⅱ. binarizations_
+## _Ⅱ. Binarizations_
 Image binarization, as the name implies, is to convert the RGB color values of the image to 0 or 1, that is, an image is only composed of 0 and 1, in the field of electronic technology, 0 represents closed 1 represents open, for pixels 0 represents no display 1 stands for display, so the image after a binarization operation consists of only black and white. This is widely used in machine vision, because for computers, they can only process 0-1 data, and do not need to know what color the image is. They only need to know the outline of the image, so they know 0 and 1 are enough.
 
 Before performing the binarization operation, we have to perform another operation, that is, to convert the image to a grayscale image. Why is such an operation required?
@@ -63,3 +63,29 @@ else:
 You think that's fine, I said earlier that in computer image recognition, the computer only knows 0 and 1, but now the data values in the image matrix are 0 and 255, so don't worry, we will put each data of the image The value is divided by 255, so that the value of the image matrix is processed into 0 and 1.
 _Okay, let's see the effect now_  
 <img src="https://s1.ax1x.com/2020/05/10/Y3dWK1.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />
+
+## _Ⅲ. Gauassian bar_
+Blur is widely used in UI special effects, such as iOS, Android, MIUI, Windows operating system. of course, blur also plays an important role in image filters, and Gaussian blur is the most widely used in blur algorithms. gaussian blur is mainly named after the mathematician Gaussian. Gaussian blur mainly uses Gaussian distribution [normal distribution] for image blur processing. let us carefully analyze the implementation process of Gaussian blur algorithm.  
+
+#### 1. Gaussian fuzzy principle:
+The so-called "blur" can be understood as the average value of surrounding pixels for each pixel.
+<img src="https://s1.ax1x.com/2020/05/12/YUuH0S.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  <img src="https://s1.ax1x.com/2020/05/12/YUKG9A.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
+
+**This is the effect,  the average value of the surrounding points will be 1**
+
+When calculating the average value, the larger the range of surrounding pixels, the stronger the blur effect
+
+<img src="https://s1.ax1x.com/2020/05/12/YUQAQ1.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  <img src="https://s1.ax1x.com/2020/05/12/YUQmdO.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  <img src="https://s1.ax1x.com/2020/05/12/YUQQWd.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
+
+#### 2. Normally distributed weights:
+###### _2.1 one dimensional normal distribution_
+<img src="https://s1.ax1x.com/2020/05/12/YU1lrt.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
+For the value through the relationship, the normal distribution is obviously a desirable weight distribution mode. on the graph, the normal distribution is a bell-shaped curve, the closer to the center, the larger the value, the farther from the center, the smaller the value.  
+When calculating the average value, we only need to use the "center point" as the origin, and assign weights to other points according to their positions on the normal curve, and we can get a weighted average.
+
+For the above normal distribution image is one-dimensional, but for an image, it is a plane with rows and columns, so we need a two-dimensional normal distribution image
+
+###### _2.2 two dimensional normal distribution_
+<img src="https://s1.ax1x.com/2020/05/12/YUtiKH.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
+
+#### 3. Gaussian function:
