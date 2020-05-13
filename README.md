@@ -90,3 +90,23 @@ For the above normal distribution image is one-dimensional, but for an image, it
 <img src="https://s1.ax1x.com/2020/05/12/YUtiKH.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />  
 
 #### 3. Gaussian function:
+###### _3.1 One-dimensional Gaussian function_    
+<img src="https://s1.ax1x.com/2020/05/13/YawtyT.jpg" alt="GitHub" title="GitHub,Social Coding" width="300" height="60" /> 
+Where μ is the mean of x and σ is the variance of x. Since the center point is the origin when calculating the average value, μ is equal to 0.  
+So the following formula:   
+<img src="https://s1.ax1x.com/2020/05/13/Ya0huT.jpg" alt="GitHub" title="GitHub,Social Coding" width="300" height="60" />  
+
+###### _3.2 Two-dimensional Gaussian function_
+According to the one-dimensional Gaussian function, the two-dimensional Gaussian function can be derived
+<img src="https://s1.ax1x.com/2020/05/13/YaBrM6.jpg" alt="GitHub" title="GitHub,Social Coding" width="300" height="60" /> 
+Well, with this two-dimensional Gaussian function we can proceed to the next operation
+
+#### 4. Weight matrix:
+Assuming the coordinates of the center point are [0, 0], then the coordinates of the 8 points closest to it are as follows:
+<img src="https://s1.ax1x.com/2020/05/13/Ydrx0K.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
+
+Now we need to calculate the weight matrix. In order to calculate the weight matrix, we need to set the value of σ. Assuming σ = 1.5, the weight matrix with a blur radius of 1 is as follows:
+<img src="https://s1.ax1x.com/2020/05/13/YdyOZ6.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
+
+The sum of the weights of these 9 points is equal to 0.4787147. If only the weighted average of these 9 points is calculated, the sum of their weights must be equal to 1. Therefore, the above 9 values must be divided by 0.4787147 to obtain the final weight matrix.
+<img src="https://s1.ax1x.com/2020/05/13/Yd6PsI.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
