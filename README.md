@@ -1,4 +1,5 @@
-# **Image processing** 
+![hackerrank_logo](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-2b74ffcaf85d7091a6301c30d6c411c5.svg)
+# **Image processing**
  
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) 
 [![image](https://img.shields.io/lgtm/alerts/g/harshildarji/Algorithms-HackerRank.svg?logo=lgtm&logoWidth=18)]()
@@ -102,11 +103,13 @@ According to the one-dimensional Gaussian function, the two-dimensional Gaussian
 Well, with this two-dimensional Gaussian function we can proceed to the next operation
 
 #### 4. Weight matrix:
-Assuming the coordinates of the center point are [0, 0], then the coordinates of the 8 points closest to it are as follows:
+Assuming the coordinates of the center point are [0, 0], then the coordinates of the 8 points closest to it are as follows:   
 <img src="https://s1.ax1x.com/2020/05/13/Ydrx0K.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
 
-Now we need to calculate the weight matrix. In order to calculate the weight matrix, we need to set the value of σ. Assuming σ = 1.5, the weight matrix with a blur radius of 1 is as follows:
+Now we need to calculate the weight matrix. In order to calculate the weight matrix, we need to set the value of σ. Assuming σ = 1.5, the weight matrix with a blur radius of 1 is as follows:   
 <img src="https://s1.ax1x.com/2020/05/13/YdyOZ6.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
 
-The sum of the weights of these 9 points is equal to 0.4787147. If only the weighted average of these 9 points is calculated, the sum of their weights must be equal to 1. Therefore, the above 9 values must be divided by 0.4787147 to obtain the final weight matrix.
+The sum of the weights of these 9 points is equal to 0.4787147. If only the weighted average of these 9 points is calculated, the sum of their weights must be equal to 1. Therefore, the above 9 values must be divided by 0.4787147 to obtain the final weight matrix.   
 <img src="https://s1.ax1x.com/2020/05/13/Yd6PsI.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
+
+#### 5. Calculate Gaussian Blur:
