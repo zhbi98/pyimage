@@ -112,4 +112,12 @@ Now we need to calculate the weight matrix. In order to calculate the weight mat
 The sum of the weights of these 9 points is equal to 0.4787147. If only the weighted average of these 9 points is calculated, the sum of their weights must be equal to 1. Therefore, the above 9 values must be divided by 0.4787147 to obtain the final weight matrix.   
 <img src="https://s1.ax1x.com/2020/05/13/Yd6PsI.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />  
 
-#### 5. Calculate Gaussian Blur:
+#### 5. Calculate Gaussian Blur:  
+The weight matrix is calculated, now we can calculate the Gaussian fuzzy value we need.  
+If we now have 9 pixels, the value range is 0 to 255, and their values are as shown in the figure below.
+<img src="https://s1.ax1x.com/2020/05/24/tSbIk6.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />    
+Now we multiply these pixels by their respective weight values, and their weight values are as follows.  
+<img src="https://s1.ax1x.com/2020/05/24/tSbv7t.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />    
+Then you get the value shown in the figure below.  
+<img src="https://s1.ax1x.com/2020/05/24/tSqAns.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />    
+Nine values are obtained here, and the calculated nine values are added together to obtain the color value of the center pixel. We repeat the above calculation and take values for all pixels of the image to obtain a Gaussian blurred image Too.  
