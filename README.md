@@ -124,6 +124,6 @@ Nine values are obtained here, and the calculated nine values are added together
 
 _Okay, let ’s take a look at the effect_  
 _original image_    
-<img src="https://s1.ax1x.com/2020/05/24/tSL7sH.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" /> 
+<img src="https://s1.ax1x.com/2020/05/24/tSL7sH.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" />   
 _After processing_  
 <img src="https://s1.ax1x.com/2020/05/24/tSL0iV.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" /> 
