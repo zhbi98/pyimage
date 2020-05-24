@@ -120,4 +120,10 @@ Now we multiply these pixels by their respective weight values, and their weight
 <img src="https://s1.ax1x.com/2020/05/24/tSbv7t.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />    
 Then you get the value shown in the figure below.  
 <img src="https://s1.ax1x.com/2020/05/24/tSqAns.jpg" alt="GitHub" title="GitHub,Social Coding" width="200" height="162" />    
-Nine values are obtained here, and the calculated nine values are added together to obtain the color value of the center pixel. We repeat the above calculation and take values for all pixels of the image to obtain a Gaussian blurred image Too.  
+Nine values are obtained here, and the calculated nine values are added together to obtain the color value of the center pixel. We repeat the above calculation and take values for all pixels of the image to obtain a Gaussian blurred image Too.    
+
+_Okay, let ’s take a look at the effect_  
+_original image_    
+<img src="https://s1.ax1x.com/2020/05/24/tSL7sH.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" /> 
+_After processing_  
+<img src="https://s1.ax1x.com/2020/05/24/tSL0iV.jpg" alt="GitHub" title="GitHub,Social Coding" width="600" height="338" /> 
