@@ -97,9 +97,9 @@ class GaussianBlur(object):
         return matrixToImages(new)
 
 
-photos = loadImage('./Sierra16.jpg')
+photos = loadImage('./Sierra18.jpg')
 
-GaussianBlur = GaussianBlur(radius=10, sigema=120)
+GaussianBlur = GaussianBlur(radius=5, sigema=25)
 fite = GaussianBlur.filtering()
 
 photo = GaussianBlur.filter(photos, fite)
