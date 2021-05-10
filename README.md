@@ -1,4 +1,4 @@
-![hackerrank_logo](https://hrcdn.net/hackerrank/assets/brand/h_mark_sm-2b74ffcaf85d7091a6301c30d6c411c5.svg)
+
 # **Image processing**
  
 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) 
